@@ -22,6 +22,7 @@ import { MemesComponent } from './memes/memes.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { AuthenticationGuard } from './authentication.guard';
+import { NotifyGuard } from './notify.guard';
 
 const routes: Routes = [
 
@@ -38,8 +39,8 @@ const routes: Routes = [
       {path: 'users', component: UsersComponent},
       {path: 'accounts', component: AccountsComponent},
       {path: 'vehicles', component: VehiclesComponent},
-      {path: 'createuser', component:CreateUserComponent},
-      {path: 'createvehicles', component:CreateVehiclesComponent},
+      {path: 'createuser', canDeactivate:[NotifyGuard], component:CreateUserComponent},
+      {path: 'createvehicles', canDeactivate:[NotifyGuard], component:CreateVehiclesComponent},
       {path: 'createaccounts', component:CreateAccountsComponent},
       {path: 'flipkart', component:FlipkartComponent},
       {path: 'mail', component:MailComponent},
