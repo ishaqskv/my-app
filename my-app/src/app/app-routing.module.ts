@@ -41,7 +41,7 @@ const routes: Routes = [
       {path: 'vehicles', component: VehiclesComponent},
       {path: 'createuser', canDeactivate:[NotifyGuard], component:CreateUserComponent},
       {path: 'createvehicles', canDeactivate:[NotifyGuard], component:CreateVehiclesComponent},
-      {path: 'createaccounts', component:CreateAccountsComponent},
+      {path: 'createaccounts', canActivate:[NotifyGuard], component:CreateAccountsComponent},
       {path: 'flipkart', component:FlipkartComponent},
       {path: 'mail', component:MailComponent},
       {path: 'activity', component:ActivityComponent},
