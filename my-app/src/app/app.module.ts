@@ -27,6 +27,7 @@ import { MemesComponent } from './memes/memes.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { PricePipe } from './price.pipe';
+import { AccountsPipe } from './accounts.pipe';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { PricePipe } from './price.pipe';
     UserFormComponent,
     StudentFormComponent,
     PricePipe,
+    AccountsPipe,
     
   ],
   imports: [
