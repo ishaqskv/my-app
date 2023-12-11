@@ -1,0 +1,45 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Package</th>
+            <th>Email</th>
+            <th>DOB</th>
+            <th>Address line</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Pincode</th>
+            <th>Hikes year</th>
+            <!-- <th>Hikes percentage</th> -->
+            <th>Work mode</th>
+            <th>Travel bill</th>
+            <th>Wifi bill</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.name}}</td>
+            <td>{{employee.company}}</td>
+            <td>{{employee.role}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.package}}</td>
+            <td>{{employee.dob}}</td>
+            <td>{{employee.address.addresLane}}</td>
+            <td>{{employee.address.city}}</td>
+            <td>{{employee.address.state}}</td>
+            <td>{{employee.address.pincode}}</td>
+            <td>
+        <tr *ngFor="let hike of employee.hikes">
+            <td>{{hike.year}}</td>
+            <td>{{hike.percentage}}</td>
+        </tr>
+        </td>
+        <td>{{employee.workMode}}</td>
+        <td>{{employee.travelBill}}</td>
+        <td>{{employee.wifiBill}}</td>
+        </tr>
+    </tbody>
+
+</table>

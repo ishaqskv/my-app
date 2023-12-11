@@ -1,0 +1,28 @@
+https://6128991386a213001729f9df.mockapi.io/test/v1/student - users
+
+https://6128991386a213001729f9df.mockapi.io/test/v1/principals - accounts
+
+https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction - vehicles
+
+https://fakestoreapi.com/products - flipkart
+
+https://jsonplaceholder.typicode.com/todos - emails
+
+https://www.boredapi.com/api/activity - activity
+
+https://api.imgflip.com/get_memes - memes
+
+https://6572df5d192318b7db412dfe.mockapi.io/employees - employees
+
+
+Login API URL:
+----------------
+https://reqres.in/api/login
+
+Payload: (for success user)
+---------
+{
+    "email": "eve.holt@reqres.in", 
+    "password": "cityslicka"
+}
+

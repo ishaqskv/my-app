@@ -1,0 +1,68 @@
+<div>
+    <h1>User form</h1>
+    <form>
+        <label>Name: </label>
+        <input type="text">
+        <br>
+
+        <label>Company: </label>
+        <input type="text">
+        <br>
+
+        <label>Role: </label>
+        <input type="text">
+        <br>
+
+        <label>Package: </label>
+        <input type="text">
+        <br>
+
+        <label>Email: </label>
+        <input type="text">
+        <br>
+
+        <div formGroupName="address">
+            <h2>Address</h2>
+            <label>Address line </label>
+            <input type="text"><br>
+            <label>City </label>
+            <input type="text" formControlName="pincode">
+            <br>
+            <label>State </label>
+            <input type="text" formControlName="pincode">
+            <br>
+            <label>Pincode </label>
+            <input type="text" formControlName="pincode">
+            <br>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <h2>Hikes</h2>
+                    <label>Year</label>
+                    <input type="date">
+                    <br>
+
+                    <label>Percentage</label>
+                    <input type="text">
+                    <br>
+
+                    <button>delete</button>
+                    
+                </div>
+            </div>
+        </div>
+        <button>Add Hikes</button><br><br>
+        
+        <h2>Work Mode</h2>
+        <input type="radio">
+        <label>Work from office</label>
+        <input type="radio">
+        <label>Remote</label>
+<br><br>
+        <button>submit</button>
+
+
+    </form>
+</div>
